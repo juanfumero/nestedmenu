@@ -7,11 +7,12 @@ import { BehaviorSubject } from 'rxjs';
 
 export class TodoItemNode {
   id: string = '';
+  parentId: string = '';
   subMenu: TodoItemNode[] = [];
   name: string = '';
   expand: boolean = false;
   isSelected: boolean = true;
-  type: 'button' | 'label' | 'button' = 'button';
+  type: 'button' | 'link' | 'button' = 'button';
 }
 
 
